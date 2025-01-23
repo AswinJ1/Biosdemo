@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { gsap } from "gsap";
+import Timeline from "./Timeline";
 
 const About = () => {
   const cardRefs = useRef([]);
@@ -61,7 +62,8 @@ const About = () => {
         </div>
 
         {/* Image and Stats Section */}
-        <div className="lg:w-1/2 flex flex-col items-center">
+        <div className="lg:w-1/2 flex flex-col items-center" >
+        <div   ref={(el) => (cardRefs.current[0] = el)}> 
           <motion.img
             initial={{ scale: 0.8, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
@@ -70,33 +72,14 @@ const About = () => {
             alt="Team Working"
             className="w-full max-w-md rounded-lg shadow-lg"
           />
+          </div>
 
           <div className="grid grid-cols-2 gap-6 mt-8">
-            <div
-              ref={(el) => (cardRefs.current[0] = el)}
-              className="bg-gray-100 p-4 rounded-lg shadow-md text-center"
-            >
-              <h3 className="text-2xl font-bold text-black">
-                Ranked No.1 in CTFTime
-              </h3>
-              <p className="text-gray-600 text-sm">
-                Consistently maintaining top rankings since its establishment.
-              </p>
-            </div>
-            <div
-              ref={(el) => (cardRefs.current[1] = el)}
-              className="bg-gray-100 p-4 rounded-lg shadow-md text-center"
-            >
-              <h3 className="text-2xl font-bold text-black">
-                10+ Cyber-Security Focus Areas
-              </h3>
-              <p className="text-gray-600 text-sm">
-                Specialized teams working on cutting-edge research.
-              </p>
-            </div>
+         
           </div>
         </div>
       </div>
+   
     </section>
   );
 };
