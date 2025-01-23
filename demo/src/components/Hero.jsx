@@ -3,7 +3,7 @@ import { Player } from '@lottiefiles/react-lottie-player';
 
 const Hero = () => {
   return (
-    <section className="bg-white p-0 mb-4 dark:bg-black dark:text-white">
+    <section className="bg-white p-0 mb-0 dark:bg-black dark:text-white">
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center py-16">
     
     {/* Animation Section */}
