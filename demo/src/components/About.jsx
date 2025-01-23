@@ -1,10 +1,16 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { gsap } from "gsap";
-import Timeline from "./Timeline";
 
 const About = () => {
   const cardRefs = useRef([]);
+  const images = ["/Bios.jpg", "/Bios.jpg", "/Bios.jpg", "/Bios.jpg"]; // Add your image paths here
+  const [currentImageIndex, setCurrentImageIndex] = useState(0); // Track the current image index
+
+  const handleChangePicture = () => {
+    // Increment index or reset to 0 if it's the last image
+    setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+  };
 
   useEffect(() => {
     cardRefs.current.forEach((card) => {
@@ -62,24 +68,30 @@ const About = () => {
         </div>
 
         {/* Image and Stats Section */}
-        <div className="lg:w-1/2 flex flex-col items-center" >
-        <div   ref={(el) => (cardRefs.current[0] = el)}> 
-          <motion.img
-            initial={{ scale: 0.8, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            transition={{ duration: 0.6 }}
-            src="/Bios.jpg"
-            alt="Team Working"
-            className="w-full max-w-md rounded-lg shadow-lg"
-          />
-          </div>
+        <div className="lg:w-1/2 flex flex-col items-center">
+          <motion.div
+            ref={(el) => (cardRefs.current[0] = el)}
+            onClick={handleChangePicture}
+            className="cursor-pointer"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.5 }}
+          >
+            <motion.img
+              key={images[currentImageIndex]} // Key ensures animation triggers on image change
+              src={images[currentImageIndex]}
+              alt={`Image ${currentImageIndex + 1}`}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.5 }}
+              className="w-full max-w-md rounded-lg shadow-lg"
+            />
+          </motion.div>
 
-          <div className="grid grid-cols-2 gap-6 mt-8">
-         
-          </div>
+          <div className="grid grid-cols-2 gap-6 mt-8"></div>
         </div>
       </div>
-   
     </section>
   );
 };

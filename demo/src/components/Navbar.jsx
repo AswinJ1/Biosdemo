@@ -21,6 +21,7 @@ const Navbar = () => {
     setMenuOpen(!menuOpen);
 
   };
+  
 
   return (
     <nav className={`bg-white text-black dark:bg-black dark:text-white`}>
