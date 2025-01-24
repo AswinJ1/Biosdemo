@@ -67,21 +67,21 @@ const About = () => {
         {/* Text Section */}
         <div className="lg:w-1/2">
           <motion.p
-            style={{ y: textY, opacity: textOpacity }} // Use transformed values
+            style={{ y: textY}} // Use transformed values
             transition={{ duration: 0.5 }}
             className="text-sm text-gray-500 uppercase mb-2"
           >
             About Us
           </motion.p>
           <motion.h2
-            style={{ y: textY, opacity: textOpacity }} // Use transformed values
+            style={{ y: textY }} // Use transformed values
             transition={{ duration: 0.7 }}
             className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 dark:text-white"
           >
             About bi0s
           </motion.h2>
           <motion.p
-            style={{ y: textY, opacity: textOpacity }} // Use transformed values
+            style={{ y: textY }} // Use transformed values
             transition={{ duration: 0.5 }}
             className="text-gray-900 text-lg leading-relaxed dark:text-white font-general"
           >

@@ -7,7 +7,7 @@ const Team = () => {
       title: "bi0s CTF",
       description:
         "The bi0s CTF team participates in various global CTFs throughout the year, specializing in Web Security, Reverse Engineering, and more.",
-      image: "/pen.png",
+      image: "/dark-logo.png",
     },
     {
       title: "bi0s Hardware",
