@@ -11,6 +11,7 @@ export default {
       fontFamily: {
         sans: ["Roboto", "ui-sans-serif", "system-ui"], // Add Roboto as the default sans-serif font
         roboto: ["Roboto", "sans-serif"], // Custom utility class for Roboto
+        "fira-code": ["Fira Code", "serif"],
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
