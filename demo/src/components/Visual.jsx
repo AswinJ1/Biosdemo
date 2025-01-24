@@ -91,9 +91,9 @@ const Visual = () => {
             ref={(el) => (cardsRef.current[index] = el)}
             className="h-[260px] w-[300px] bg-white dark:bg-gray-800 rounded-[10px] cursor-pointer border border-solid border-gray-300 dark:border-gray-700 flex flex-col justify-center items-center p-4 transform perspective-1000 transition-shadow duration-300"
           >
-            <div className="dark:text-gray-300 text-black mb-2">{card.icon}</div>
-            <h2 className="text-gray-900 dark:text-white text-xl text-center">{card.title}</h2>
-            <p className="text-gray-500 dark:text-gray-400 text-sm text-center mt-2">{card.description}</p>
+            <div className="dark:text-gray-300 text-black mb-2 font-roboto">{card.icon}</div>
+            <h2 className="text-gray-900 dark:text-white text-xl text-center font-roboto">{card.title}</h2>
+            <p className="text-gray-500 dark:text-gray-400 text-sm text-center mt-2 font-roboto">{card.description}</p>
           </div>
         ))}
       </div>

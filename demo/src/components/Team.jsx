@@ -28,7 +28,7 @@ const Team = () => {
       <h2 className="text-3xl sm:text-4xl font-bold text-center mb-8">
         Our Teams
       </h2>
-      <p className="text-center text-gray-400 max-w-3xl mx-auto mb-12">
+      <p className="text-center text-gray-800 dark:text-gray-400 max-w-3xl mx-auto mb-12">
         We have specialized teams focusing on various areas in cybersecurity.
       </p>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">

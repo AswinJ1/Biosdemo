@@ -6,6 +6,7 @@ import Visual from '../components/Visual'
 import Team from '../components/Team'
 import CTFEvents from '../components/CTFEvents'
 import LearningSection from '../components/LearningSection'
+import Footer from '../components/Footer'
 const Home = () => {
   return (
     <div>
@@ -16,6 +17,7 @@ const Home = () => {
       <Team></Team>
      <CTFEvents></CTFEvents>
     <LearningSection></LearningSection>
+    <Footer></Footer>
     </div>
   )
 }

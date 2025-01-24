@@ -7,10 +7,10 @@ const LearningSection = () => {
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center">
         {/* Text Section */}
         <div className="w-full lg:w-1/2 text-center lg:text-left mb-8 lg:mb-0">
-          <h1 className="text-4xl font-extrabold leading-tight mb-6">
+          <h1 className="text-4xl font-extrabold leading-tight mb-6 font-roboto">
           Protect, Secure, and Explore the Digital World with Our Resources!
           </h1>
-          <p className="text-lg leading-relaxed mb-8">
+          <p className="text-lg leading-relaxed mb-8 font-roboto">
           Wiki.bi0s provides a vast collection of cybersecurity resources, tutorials, and tools to help both beginners and professionals stay updated. It offers guides, case studies, and interactive exercises to improve skills.
           </p>
           <motion.button
@@ -34,7 +34,7 @@ const LearningSection = () => {
       }}
       className="px-6 py-2 rounded-md relative radial-gradient"
     >
-      <span className="text-neutral-100 tracking-wide font-light h-full w-full block relative linear-mask">
+      <span className="text-neutral-100 tracking-wide font-light h-full w-full block relative linear-mask font-roboto">
         Explore wiki.bi0s
       </span>
       <span className="block absolute inset-0 rounded-md p-px linear-overlay" />

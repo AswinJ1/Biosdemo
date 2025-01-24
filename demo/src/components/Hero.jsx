@@ -75,7 +75,7 @@ const Hero = () => {
               }}
               className="px-5 py-2 text-sm sm:text-base rounded-md relative radial-gradient"
             >
-              <span className="text-neutral-100 tracking-wide font-light h-full w-full block relative linear-mask">
+              <span className="text-neutral-100 tracking-wide font-light h-full w-full block relative linear-mask font-roboto">
               Join Recruitment CTF
               </span>
               <span className="block absolute inset-0 rounded-md p-px linear-overlay" />
