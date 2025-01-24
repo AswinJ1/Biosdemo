@@ -83,7 +83,7 @@ const About = () => {
           <motion.p
             style={{ y: textY, opacity: textOpacity }} // Use transformed values
             transition={{ duration: 0.5 }}
-            className="text-gray-600 text-lg leading-relaxed dark:text-white font-general"
+            className="text-gray-900 text-lg leading-relaxed dark:text-white font-general"
           >
             Team bi0s is a cyber-security club and research group from Amrita
             Vishwa Vidyapeetham, India. Established in 2007 under the mentorship

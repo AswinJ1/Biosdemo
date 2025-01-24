@@ -47,6 +47,7 @@ const Visual = () => {
         gsap.to(card, {
           rotationY: x / 10,
           rotationX: -y / 10,
+          boxShadow: `0px 4px 20px rgba(255, 0, 255, 0.5), 0px 0px 40px rgba(255, 0, 255, 0.7)`,
           duration: 0.3,
         });
       };
@@ -55,6 +56,7 @@ const Visual = () => {
         gsap.to(card, {
           rotationY: 0,
           rotationX: 0,
+          boxShadow: "none",
           duration: 0.5,
           ease: "power3.out",
         });
@@ -75,7 +77,7 @@ const Visual = () => {
       {/* Title */}
       <h1 className="m-0 text-black dark:text-white text-center font-roboto font-medium text-xl lg:text-4xl leading-relaxed lg:leading-loose mb-6">
         How
-        <span className="magic-text bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-violet-500 to-pink-500">
+        <span className="magic-text bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-violet-500 to-pink-500 px-1 mx-1 inline-block">
           do
         </span>
         we do
@@ -87,11 +89,11 @@ const Visual = () => {
           <div
             key={index}
             ref={(el) => (cardsRef.current[index] = el)}
-            className="h-[260px] w-[300px] bg-slate-white dark:bg-gray-800 rounded-[10px] cursor-pointer border-solid border flex flex-col justify-center items-center p-4 transform perspective-1000"
+            className="h-[260px] w-[300px] bg-white dark:bg-gray-800 rounded-[10px] cursor-pointer border border-solid border-gray-300 dark:border-gray-700 flex flex-col justify-center items-center p-4 transform perspective-1000 transition-shadow duration-300"
           >
-            <div className="dark:text-gray-300 text-indigo-800 mb-2">{card.icon}</div>
-            <h2 className="text-white text-xl text-center">{card.title}</h2>
-            <p className="text-gray-400 text-sm text-center mt-2">{card.description}</p>
+            <div className="dark:text-gray-300 text-black mb-2">{card.icon}</div>
+            <h2 className="text-gray-900 dark:text-white text-xl text-center">{card.title}</h2>
+            <p className="text-gray-500 dark:text-gray-400 text-sm text-center mt-2">{card.description}</p>
           </div>
         ))}
       </div>
