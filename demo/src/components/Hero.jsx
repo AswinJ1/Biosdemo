@@ -53,7 +53,7 @@ const Hero = () => {
             We're a team from Amrita University, passionate about cybersecurity. Our club trains freshers via CTFs, organizes infosec events, and works on research projects.
           </p>
           <div className="mt-5 flex flex-wrap justify-center lg:justify-start space-x-4">
-            <button className="bg-white hover:bg-black border border-black p-3 dark:border-white dark:bg-black dark:text-white dark:hover:bg-white dark:hover:text-black text-black hover:text-white font-bold py-2 px-4 rounded animate-borderColorAnimation ml-4">
+            <button className="bg-black text-white hover:shadow-md hover:bg-black border border-black p-3 dark:border-white dark:bg-white dark:text-black dark:hover:opacity-90 dark:shadow-md dark:hover:text-black  hover:text-white font-bold py-2 px-4 rounded  ml-4">
               Join Recruitment CTF
             </button>
           </div>
