@@ -5,6 +5,7 @@ import About from '../components/About'
 import Visual from '../components/Visual'
 import Team from '../components/Team'
 import CTFEvents from '../components/CTFEvents'
+import LearningSection from '../components/LearningSection'
 const Home = () => {
   return (
     <div>
@@ -14,7 +15,7 @@ const Home = () => {
       <Visual></Visual>
       <Team></Team>
      <CTFEvents></CTFEvents>
-
+    <LearningSection></LearningSection>
     </div>
   )
 }
