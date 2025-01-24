@@ -58,8 +58,8 @@ const TeamCard = ({ title, description, image }) => {
 
       {/* Text Content */}
       <div className="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black/80 via-black/50 to-transparent p-4 sm:p-6 z-20">
-        <h3 className="text-md sm:text-lg font-bold dark:text-white text-black">{title}</h3>
-        <p className="text-sm sm:text-base dark:text-gray-300 text-black">{description}</p>
+        <h3 className="text-md sm:text-lg font-bold text-white ">{title}</h3>
+        <p className="text-sm sm:text-base text-gray-300 ">{description}</p>
       </div>
     </motion.div>
   );
