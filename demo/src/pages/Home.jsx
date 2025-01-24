@@ -4,7 +4,7 @@ import Hero from '../components/Hero'
 import About from '../components/About'
 import Visual from '../components/Visual'
 import Team from '../components/Team'
-
+import CTFEvents from '../components/CTFEvents'
 const Home = () => {
   return (
     <div>
@@ -13,7 +13,7 @@ const Home = () => {
       <About></About>
       <Visual></Visual>
       <Team></Team>
-     
+     <CTFEvents></CTFEvents>
 
     </div>
   )
