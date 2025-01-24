@@ -1,6 +1,6 @@
 import React from "react";
 import { Player } from "@lottiefiles/react-lottie-player";
-
+import { motion } from "framer-motion";
 const LearningSection = () => {
   return (
     <section className="bg-white dark:bg-black text-black dark:text-white p-8 lg:p-16">
@@ -8,36 +8,37 @@ const LearningSection = () => {
         {/* Text Section */}
         <div className="w-full lg:w-1/2 text-center lg:text-left mb-8 lg:mb-0">
           <h1 className="text-4xl font-extrabold leading-tight mb-6">
-            Welcome to Your Cybersecurity Learning Journey
+          Protect, Secure, and Explore the Digital World with Our Resources!
           </h1>
-          <p className="text-lg leading-relaxed mb-6">
-            Unlock the world of cybersecurity and master the skills needed to
-            secure digital landscapes. Whether you're a beginner or an advanced
-            learner, our platform offers step-by-step tutorials, hands-on
-            exercises, and resources tailored to your needs.
+          <p className="text-lg leading-relaxed mb-8">
+          Wiki.bi0s provides a vast collection of cybersecurity resources, tutorials, and tools to help both beginners and professionals stay updated. It offers guides, case studies, and interactive exercises to improve skills.
           </p>
-          <p className="text-md leading-relaxed mb-8">
-            Explore interactive guides, challenges, and tools crafted by
-            experts to take your learning experience to the next level.
-          </p>
-          <div className="space-x-4">
-            <a
-              href="https://wiki.bi0s.in"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-blue-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-700 transition duration-200"
-            >
-              Start Learning Now
-            </a>
-            <a
-              href="https://ctf.bi0s.in"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-gray-200 text-blue-600 font-bold py-3 px-6 rounded-lg hover:bg-gray-300 transition duration-200 dark:bg-gray-800 dark:text-blue-400 dark:hover:bg-gray-700"
-            >
-              Try a CTF Challenge
-            </a>
-          </div>
+          <motion.button
+      initial={{ "--x": "100%", scale: 1 }}
+      animate={{ "--x": "-100%" }}
+      whileTap={{ scale: 0.97 }}
+      transition={{
+        repeat: Infinity,
+        repeatType: "loop",
+        repeatDelay: 1,
+        type: "spring",
+        stiffness: 20,
+        damping: 15,
+        mass: 2,
+        scale: {
+          type: "spring",
+          stiffness: 10,
+          damping: 5,
+          mass: 0.1,
+        },
+      }}
+      className="px-6 py-2 rounded-md relative radial-gradient"
+    >
+      <span className="text-neutral-100 tracking-wide font-light h-full w-full block relative linear-mask">
+        Explore wiki.bi0s
+      </span>
+      <span className="block absolute inset-0 rounded-md p-px linear-overlay" />
+    </motion.button>
         </div>
 
         {/* Animation Section */}
