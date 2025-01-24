@@ -10,6 +10,9 @@ export default {
         sans: ['Roboto', 'ui-sans-serif', 'system-ui'], // Add Roboto as the default sans-serif font
         roboto: ['Roboto', 'sans-serif'], // Custom utility class for Roboto
       },
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(var(--mouse-x), var(--mouse-y))',
+      },
       animation: {
         'borderColorAnimation': 'borderColorAnimation 3s infinite',
       },
